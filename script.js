@@ -81,7 +81,7 @@ function outputData() {
     let email = document.getElementById("email").value;
 
 
-    if (first != "" && last != ""  && phone != "" && date != ""&& email != "" ) {
+    if (checkFirst() && checkLast() && checkPhone() && checkDate() && checkEmail()) {
         alert("Проверьте, пожалуйста, свои данные!\n" + 
             "Ваше имя: " + first + "\n" + 
             "Ваша фамилия: " + last + "\n" + 
@@ -90,7 +90,7 @@ function outputData() {
             "Ваш e-mail: " + email);
     }
     else {
-        alert("Пожалуйста, заполните все поля.");
+        alert("Пожалуйста, заполните корректно все поля.");
     }
 }
 
