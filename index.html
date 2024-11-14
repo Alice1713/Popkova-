@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer_title">С помощью нас <br> вы можете создать то, о чем</h1>
+                    <span class="offer_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на 100%. Вас не остановить!</p>
+                    <a href="#" class="btnn">Узнать больше...</a>
+                </div>
+                <img class="img"  src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+    <section class="blocks">
+        <div class="container">
+            <div class="blocks_title">
+                <h1>Что Вам необходимо?</h1>
+            </div>
+            <div class="blocks_content">
+                <div class="block">
+                    <img class="block_img" src="img/f3.png" alt="Первый блок">
+                    <h2>Первый блок</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                </div>
+                <div class="block">
+                    <img class="block_img" src="img/f4.png" alt="Второй блок">
+                    <h2>Второй блок</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit?</p> 
+                </div>
+                <div class="block">
+                    <img class="block_img" src="img/f5.png" alt="Третий блок">
+                    <h2>Третий блок</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forms">
+        <div class="container">
+            <h2 class="forms_title">Форма сбора данных клиента</h2>
+            <form class="form form1" action="#" method="post">
+                <div class="row">
+                    <div class="col-3">Имя:</div>
+                    <div class="col-8"><input class="regform" id="first" type="text" onblur="checkFirst();" required /></div>
+                    <div class="col-1"><span id="first_Check"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Фамилия:</div>
+                    <div class="col-8"><input class="regform" id="last" type="text" onblur="checkLast();" required /></div>
+                    <div class="col-1"><span id="last_Check"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Номер телефона:</div>
+                    <div class="col-8"><input class="regform" id="phone" type="tel" onblur="checkPhone();" required /></div>
+                    <div class="col-1"><span id="phone_Check"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Дата рождения:</div>
+                    <div class="col-8"><input class="regform" id="date" type="date" onblur="checkDate();" required /></div>
+                    <div class="col-1"><span id="date_Check"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-3">E-mail:</div>
+                    <div class="col-8"><input class="regform" id="email" type="email" onblur="checkEmail();" required /></div>
+                    <div class="col-1"><span id="email_Check"></span></div>
+                </div>
+                <div class="button">                  
+                    <button type="button" onclick="outputData()">Проверить данные</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="forms">
+        <div class="container">
+            <h2 class="forms_title">Форма заказа обратного звонка</h2>
+            <form class="form" action="#" method="post">
+                <input class="orderform" type="text" name="name" placeholder="Имя" required>
+                <input class="orderform" type="email" name="email" placeholder="Введите свой E-mail" required>
+                <input class="orderform" type="tel" name="phone" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                <input class="orderform" type="text" name="theme" placeholder="Какая тема Вас интересует?" required minlength="10" maxlength="200"> 
+                <button class="orderform" type="submit">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+            <p class="footer_text">© Все на этом сайте защищено</p>
+    </footer>
+    <script src="script.js">
+
+    </script>
+
+</body>
+</html>
